@@ -16,7 +16,7 @@ WORKDIR /usr/src/template
 # into this layer.
 RUN apt clean
 RUN apt-get update
-RUN apt-get install git 
+RUN apt-get -y install git 
 
 # Install Ruby and Bundler
 RUN apt-get -y install ruby ruby-dev ruby-bundler
